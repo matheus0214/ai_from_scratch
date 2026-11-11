@@ -218,7 +218,10 @@ Anote esse comportamento. Escolher a taxa de aprendizado é um dos problemas cen
 Responda sem olhar o código. Se quiser, mande as respostas na próxima sessão.
 
 1. O que acontece com `w` quando o chute está acima do valor real? Por quê?
+    - Ele vai reduzir
+    - O sinal da diferença mostra se vamos aumentar ou diminuir o proximo `w`, pois como foi ensinado o sinal da diferença mostra a direção para onde vamos se subir ou descer o valor
 2. Por que o ajuste fica menor conforme o treino avança, mesmo com a `taxa` fixa?
+    - Porque como atualizados o `w` baseado no ajuste calculado anteriormente ele vai reduzindo pois vai chegando mais porto do valor real
 3. Se os dados fossem `y = 3x + 5`, este modelo conseguiria chegar a erro zero? O que falta nele?
 
 ## 🗺️ O Mapa da Coleção
