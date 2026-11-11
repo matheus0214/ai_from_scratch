@@ -138,6 +138,34 @@ Este é o único volume em que bibliotecas externas entram, e só no capítulo 3
 
 ---
 
+## Projetos Extras: IA que Joga
+
+Projetos opcionais para manter a motivação. Eles não bloqueiam os volumes e usam só a biblioteca padrão; os jogos rodam no terminal (módulo `curses`).
+
+Regras:
+
+- **Um extra por vez**, e só **entre** volumes, nunca no meio de um.
+- Cada extra só destrava depois do volume indicado, porque usa o que você construiu nele.
+- Cada extra tem de 3 a 6 sessões e um critério de conclusão, como qualquer volume.
+- Pular um extra não tem custo. Abandonar um extra pela metade tem: se começou, termine ou registre no `PROGRESSO.md` por que parou.
+
+| # | Projeto | Destrava após | Técnica | Sessões | Critério de conclusão |
+|---|---|---|---|---|---|
+| E1 | Recomendador por similaridade | Volume 1 | Produto escalar e similaridade de cosseno | ~3 | Dado um jogo que você gosta, lista os 3 mais parecidos de uma tabela sua |
+| E2 | Jogo da velha imbatível | Volume 1 | Busca minimax (sem aprendizado) | ~3 | A IA nunca perde em 1.000 partidas contra jogadas aleatórias |
+| E3 | Labirinto com Q-learning | Volume 2 | Aprendizado por reforço com tabela | ~4 | O agente acha o caminho mais curto em um labirinto que você desenhou |
+| E4 | Cobrinha, nível 1 | Extra E3 | Q-learning com estado simples (perigo à frente, direção da comida) | ~5 | Média de 10 comidas ou mais em 100 partidas |
+| E5 | Cobrinha, nível 2 | Volume 4 | Rede neural evoluída por algoritmo genético (sem backpropagation) | ~6 | A melhor cobrinha da população supera a média do nível 1 |
+| E6 | Flappy Bird no terminal | Extra E5 | A mesma neuroevolução em outro jogo | ~4 | Um pássaro passa por 50 canos seguidos |
+| E7 | Reconhecer dígitos desenhados | Volume 4 | A sua MLP em imagens 8×8 | ~5 | Acurácia de 90% ou mais no conjunto de teste |
+| E8 | Cobrinha, nível 3 | Volume 5 | DQN: Q-learning com a sua MLP no lugar da tabela | ~6 | A rede treinada com backpropagation joga melhor que o nível 1 |
+
+A cobrinha aparece três vezes de propósito: o mesmo jogo resolvido com tabela, com evolução e com rede treinada mostra, na prática, o que cada volume acrescenta.
+
+Aprendizado por reforço não faz parte dos volumes principais; o extra E3 apresenta o que é necessário.
+
+---
+
 ## Onde você está
 
 Volume 0, Capítulo 0. Próximo passo: rodar o script até imprimir o `OK`.
