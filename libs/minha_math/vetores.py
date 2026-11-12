@@ -6,9 +6,9 @@ todas devolvem uma lista nova.
 
 Vetor = list[float]
 
-def tamanhos_diferentes(a: int, b: int):
-    if a != b:
-        raise ValueError("Tamanho dos vetores devem ser iguais")
+def tamanhos_diferentes(len_x: int, len_y: int):
+    if len_x != len_y:
+        raise ValueError(f"Tamanho dos vetores devem ser iguais, recebido {len_x} e {len_y}")
 
 
 def somar(a: Vetor, b: Vetor) -> Vetor:
