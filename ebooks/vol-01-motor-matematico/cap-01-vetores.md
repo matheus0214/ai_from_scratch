@@ -154,8 +154,12 @@ Para rodar tudo de uma vez: `python3 -m unittest discover -s tests -v`
 Responda sem olhar o código.
 
 1. Por que `multiplicar_por_escalar` não precisa validar tamanhos, e `somar` precisa?
+    - O escalar e um número qualquer fixo então e sempre um valor multiplicando por cada elemento do vetor
 2. Um personagem está em `[2, 3]` e o alvo em `[10, 3]`. Que conta dá o vetor que aponta do personagem para o alvo, e qual é o resultado?
+    - Seria A - P = [10, 3] - [2, 3]
+    - Resultado [8, 0]
 3. Em `dar_passo`, o que acontece com `w` se a `taxa` for negativa? Relacione com o que você viu no Capítulo 0.
+    - Um valor cresce enquanto o outro diminui, vão em direções opostas
 
 ## ➡️ Próximo Passo
 
