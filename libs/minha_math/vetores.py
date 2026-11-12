@@ -53,7 +53,7 @@ def multiplicar_por_escalar(k: float, v: Vetor) -> Vetor:
     >>> multiplicar_por_escalar(3.0, [1.0, 2.0])
     [3.0, 6.0]
     """
-    raise NotImplementedError
+    return [k * x for x in v]
 
 
 def dar_passo(w: Vetor, ajuste: Vetor, taxa: float) -> Vetor:
@@ -64,4 +64,4 @@ def dar_passo(w: Vetor, ajuste: Vetor, taxa: float) -> Vetor:
     >>> dar_passo([1.0, 1.0], [10.0, -20.0], 0.1)
     [0.0, 3.0]
     """
-    raise NotImplementedError
+    return subtrair(w, multiplicar_por_escalar(taxa, ajuste))
